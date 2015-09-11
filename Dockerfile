@@ -1,4 +1,4 @@
 FROM centos
-ADD jialiu /opt/jialiu_test
+ADD hack_init.sh /bin/hack_init.sh
 
-ENTRYPOINT ["/bin/bash", "-ti"]
+ENTRYPOINT ["sh", "/bin/hack_init.sh"]
